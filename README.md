@@ -1,6 +1,6 @@
-# Sample Hardhat Project
+# Sample Dynamic NFT Scheduler
 
-Simple Dynamic NFT Deployment with cronjob running on your local host in Typescript.
+Simple Dynamic NFT Deployment (ERC1155) with cronjob running on your local host in Typescript.
 
 The job runs every 3 minutes for 10 minutes, it changes the nft image by swapping metadatas. Feel free to adjust the interval to your liking. 
 

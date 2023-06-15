@@ -10,15 +10,21 @@ The job runs every 3 minutes for 10 minutes, it changes the nft image by swappin
 - RPC URL
 
 # Run the code 
-1. First deploy the contract
+1. Set your environment variables
+```
+//I'm using @chainlink/env-enc to store encrypted variables
+npx env-enc set-pw //Set a password
+npx env-enc set //Encrypt variables
+```
+2. Deploy your contract
 ```
 npx hardhat run scripts/deploy.ts
 ```
-2. Verify deployed contract (I'm using the matic network, feel free to use others)
+3. Verify deployed contract (I'm using the matic network, feel free to use others)
 ```
 npx hardhat verify --network polygonMumbai <contract address>
 ```
-3. Call the `scheduler.ts` script
+4. Call the `scheduler.ts` script
 ```
 npx hardhat run scripts/interact.ts
 ```
